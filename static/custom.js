@@ -1,5 +1,5 @@
-function submit_message(message) {
-        $.post( "/send_message", {message: message}, handle_response);
+function submit_message(project_name, message) {
+        $.post( `/project/${project_name}/send_message`, {message: message}, handle_response);
 
         function handle_response(data) {
           // append the bot repsonse to the div
@@ -12,7 +12,7 @@ function submit_message(message) {
           $( "#loading" ).remove();
         }
     }
-
+//jQuery study
 $('#target').on('submit', function(e){
         e.preventDefault();
         const input_message = $('#input_message').val()
@@ -38,5 +38,5 @@ $('#target').on('submit', function(e){
         $('#input_message').val('')
 
         // send the message
-        submit_message(input_message)
+        submit_message('example_project', input_message)
     });

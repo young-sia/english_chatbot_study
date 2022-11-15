@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, abort
 import os
 import requests
 import json
@@ -42,7 +42,7 @@ def detect_intent_texts(project_id, session_id, text, language_code):
     if text:
         text_input = dialogflow.TextInput(
             text=text, language_code=language_code)
-        query_input = dialogflow.QueryInput(text_input)
+        query_input = dialogflow.QueryInput(text=text_input)
         response = session_client.detect_intent(
             session=session, query_input=query_input)
         return response.query_result.fulfillment_text
@@ -56,6 +56,23 @@ def send_message():
     response_text = {"message": fulfillment_text}
     return jsonify(response_text)
 
+
+@app.route('/project/<project_name>/send_message', methods=['POST'])
+def project_message(project_name):
+    message = request.form['message']
+    try:
+        project_id = project_name_id[project_name]
+    except KeyError:
+        abort(404)
+        return
+    fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
+    response_text = {"message": fulfillment_text}
+    return jsonify(response_text)
+
+
+project_name_id = {
+    'example_project': 'newagent-xmaw'
+}
 
 # run Flask app
 if __name__ == "__main__":
