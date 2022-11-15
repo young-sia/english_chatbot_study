@@ -10,6 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    app.logger.info('start the page')
     return render_template('chatbot_page.html')
 
 
@@ -46,13 +47,14 @@ def detect_intent_texts(project_id, session_id, text, language_code):
             session=session, query_input=query_input)
         return response.query_result.fulfillment_text
 
-    @app.route('/send_message', methods=['POST'])
-    def send_message():
-        message = request.form['message']
-        project_id = os.getenv('DIALOGFLOW_PROJECT_ID')
-        fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
-        response_text = {"message": fulfillment_text}
-        return jsonify(response_text)
+
+@app.route('/send_message', methods=['POST'])
+def send_message():
+    message = request.form['message']
+    project_id = os.getenv('DIALOGFLOW_PROJECT_ID')
+    fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
+    response_text = {"message": fulfillment_text}
+    return jsonify(response_text)
 
 
 # run Flask app
