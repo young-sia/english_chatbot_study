@@ -1,2 +1,5 @@
 flask
 Gunicorn
+google-cloud-dialogflow
+requests
+pusher
