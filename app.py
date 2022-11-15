@@ -64,7 +64,7 @@ def project_message(project_name):
         project_id = project_name_id[project_name]
     except KeyError:
         abort(404)
-        return
+        return None
     fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
     response_text = {"message": fulfillment_text}
     return jsonify(response_text)
