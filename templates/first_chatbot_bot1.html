@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+  </head>
+<body>
+<form action="http://localhost/ingchat.html">
+  <input type="submit" value="홈페이지" />
+</form>
+</body>
+<iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/dd503c14-91b9-4373-9fe1-304010e1933e">
+</iframe>
+
+<meta name="viewport" content="width-device-width, initial-scale=1">
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="start_event"
+  chat-title="도우미"
+  agent-id="dd503c14-91b9-4373-9fe1-304010e1933e"
+  language-code="en"
+  expand="true"
+></df-messenger>
+
+
+</html>

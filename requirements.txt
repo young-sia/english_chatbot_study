@@ -3,3 +3,6 @@ Gunicorn
 google-cloud-dialogflow
 requests
 pusher
+SpeechRecognition
+pyaudio
+python-dotenv

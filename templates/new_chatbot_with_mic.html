@@ -10,6 +10,7 @@
     <title>English Assistance</title>
   </head>
   <body>
+  <img src="{{ url_for('static', filename=image_file) }}" style="width:100px; height:100px;" />
       <div class="container h-100">
         <div class="row align-items-center h-100">
             <div class="col-md-8 col-sm-12 mx-auto">
@@ -23,6 +24,7 @@
                     <form id="target">
                        <input class="input" type="text" value="" placeholder="Enter message..." id="input_message"/>
                        <input type="submit" hidden>
+                        <input class = "input" type="button" value="mic" id="input_audio_message" />
                     </form>
                 </div>
             </div>

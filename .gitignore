@@ -3,3 +3,4 @@ venv
 .flaskenv
 .env
 newagent-xmaw-fe162ba2bbc3.json
+test.js
