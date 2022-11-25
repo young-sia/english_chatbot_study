@@ -1,44 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>English chatbot</title>
-    <style>
-        .door_title{
-        width:700                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              px;
-        margin-left:15%;
-        margin-right:15%
-        letter-spacing:0.2em
-        color:white;
-        text-align:justify;
-        background: yellow;
-        font-size:64px;
-        }
-        .left-img{
-        float:left;
-        margin-right:15px;
-        width:400px;
-        height:400px;
-        }
-        .right-box{
-        width:300px;
-        height:40px;
-        background:#0094ff
-        }
-        #crd{
-        right:0
-        }
-    </style>
-</head>
-<body>
-<h2 class="door_title">Welcome to English Chatbot site</h2>
-<div id="inline">
-<img src="images/example_tomato.png" class="left-img">
-<p class="right-box" id="crd">잉글리시 챗봇 잉챗에 오신 것을 환영합니다.</p>
-</div>
-<a href="./manual">
-    <input type="button"
-           value="start"/>
-</a>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>EngChat:잉챗</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../static/styles.css" rel="stylesheet" />
+        <link href="../static/ssa.css" rel="stylesheet" />
+
+    </head>
+    <body class="d-flex flex-column h-100">
+    <div id="gradient" />
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">EngChat</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="row gx-8 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-black mb-2">EngChat </h1>
+                                <h1 class="display-5 fw-bolder text-black mb-2">(English Chatbot Assistance) </h1>
+                                <p class="lead fw-normal text-black-50 mb-4">잉챗은 초등학생 영어 학습용 챗봇입니다. </p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="./manual">Let's Start!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{{ url_for('static',filename='images/apple.jpg') }}" width="300" alt="..." /></div>
+                    </div>
+                </div>
+            </header>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; EngChat 2022</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../static/scripts.js"></script>
+        <script src="../static/ssa.js"></script>
+        </main>
+    </body>
 </html>
