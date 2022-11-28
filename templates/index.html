@@ -1,74 +1,157 @@
-<!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>EngChat:잉챗</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../static/styles.css" rel="stylesheet" />
-        <link href="../static/ssa.css" rel="stylesheet" />
 
-    </head>
-    <body class="d-flex flex-column h-100">
-    <div id="gradient" />
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">EngChat</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Header-->
-            <header class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="row gx-8 align-items-center justify-content-center">
-                        <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-black mb-2">EngChat </h1>
-                                <h1 class="display-5 fw-bolder text-black mb-2">(English Chatbot Assistance) </h1>
-                                <p class="lead fw-normal text-black-50 mb-4">잉챗은 초등학생 영어 학습용 챗봇입니다. </p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="./manual">Let's Start!</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{{ url_for('static',filename='images/apple.jpg') }}" width="300" alt="..." /></div>
-                    </div>
-                </div>
-            </header>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>KUS_EngChat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; EngChat 2022</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="../static/scripts.js"></script>
-        <script src="../static/ssa.js"></script>
-        </main>
-    </body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="/" class="logo"><strong>Home</strong></a>
+									<ul class="icons">
+										<li><a href="./chatbot1" class="logo" ><strong>Chat1</strong></a>
+										<li><a href="./chatbot2" class="logo"><strong>Chat2</strong></a>
+										<li><a href="./chatbot3" class="logo"><strong>Chat3</strong></a>
+
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hello<br/>
+											I am EngChat</h1>
+											<p>여기에 대문페이지 소개문 짧게 작성하기 글씨체 바꿀 수 있으려나</p>
+										</header>
+										<p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 </p>
+										<ul class="actions">
+											<li><a href="./chatbot1" class="button big">chat1</a></li>
+											<li><a href="./chatbot2" class="button big">chat2</a></li>
+											<li><a href="./chatbot3" class="button big">chat3</a></li>
+
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/팀플4.jpg" alt="" />
+									</span>
+								</section> <br><br><br><br>
+
+
+
+
+								<section> <br><br><br><br><br><br><br><br><br><br>
+
+<!--									<header class="major">-->
+<!--										<h2>Erat Creater</h2>-->
+<!--									</header>-->
+<!--									<div class="features">-->
+<!--										<article>-->
+<!--											<span class="icon fa-gem"></span>-->
+<!--											<div class="content">-->
+<!--												<h3>Portitor ullamcorper</h3>-->
+<!--												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>-->
+<!--											</div>-->
+<!--										</article>-->
+<!--										<article>-->
+<!--											<span class="icon solid fa-paper-plane"></span>-->
+<!--											<div class="content">-->
+<!--												<h3>Sapien veroeros</h3>-->
+<!--												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>-->
+<!--											</div>-->
+<!--										</article>-->
+<!--										<article>-->
+<!--											<span class="icon solid fa-rocket"></span>-->
+<!--											<div class="content">-->
+<!--												<h3>Quam lorem ipsum</h3>-->
+<!--												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>-->
+<!--											</div>-->
+<!--										</article>-->
+<!--										<article>-->
+<!--											<span class="icon solid fa-signal"></span>-->
+<!--											<div class="content">-->
+<!--												<h3>Sed magna finibus</h3>-->
+<!--												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>-->
+<!--											</div>-->
+<!--										</article>-->
+<!--									</div>-->
+								</section>
+
+
+
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<div style="text-align:center">
+										<img src="../static/images/apple.jpg" alt="" width="100" height="100" />
+<!--										<h2></h2>-->
+<!--										<h2>Englsih </h2>-->
+										</div>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="/">Homepage</a></li>
+										<li><a href="./chatbot1">Chat1</a></li>
+										<li><a href="./chatbot2">Chat2</a></li>
+										<li><a href="./chatbot3">Chat3</a></li>
+									</ul>
+								</nav>
+
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Characteristics</h2>
+									</header>
+									<p>이 사이트는 고려대학교 사회혁신CBL2 잉챗팀에서 만든 사이트입니다.</p>
+									<ul class="contact">
+										<li class="icon solid fa-check">To. 초등학생(Elementary Students)</li>
+										<li class="icon solid fa-check">For. 소통형 영어 공부 (Study chatbot)</li>
+										<li class="icon solid fa-check">In. 무료 (No cost)<br/></li>
+										<li class="icon solid fa-check">Now. 개발 진행중(On progress)<br/></li>
+										<li class="icon solid fa-check">From. 대학생(University Students)<br/></li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+					</div>
+			</div>
+	</body>
 </html>

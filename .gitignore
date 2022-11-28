@@ -4,5 +4,3 @@ venv
 .env
 newagent-xmaw-fe162ba2bbc3.json
 test.js
-templates/test.html
-static/assets
